@@ -1,2 +1,2 @@
-1.0.0 [XX-09-2021]:
+1.0.0 [15-10-2021]:
  - Prima release pubblica!
