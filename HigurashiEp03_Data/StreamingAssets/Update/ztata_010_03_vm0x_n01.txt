@@ -1,0 +1,20 @@
+void main()
+{
+}
+
+void dialog000()
+{
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の母</color>", NULL, "<color=#f5e6d3>Mamma di Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700008", 256, TRUE);
+	// <missing transration>
+	OutputLine(NULL, "「そうねぇ……よくできた推理小説……う〜ん……",
+		   NULL, "\"Vediamo... un giallo ben fatto... uhm...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s03/00/142700009", 256, TRUE);
+	// <missing transration>
+	OutputLine(NULL, "結構どれもこれも色んな魅力があって、どれが面白かったとは言いにくいけど、強いてあげれば……」",
+		   NULL, " hanno tutti il loro fascino, quindi è difficile sceglierne uno. Non so se ci riesco...\"", GetGlobalFlag(GLinemodeSp));
+}

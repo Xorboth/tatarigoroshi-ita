@@ -1,0 +1,116 @@
+void main()
+{
+
+//*Sub_Tips_052
+//gosub *tip_s
+//■タイトル：大石席のメモ
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys12", 56, 0 );
+
+//　大石さんへ＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石さんへ。",
+		   NULL, "Per Ooishi-san.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　捜査四課の重春課長からお電話がありました＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　捜査四課の重春課長からお電話がありました。",
+		   NULL, "Hai ricevuto una telefonata dal capo della Sezione 4, Shigeharu.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　例の王子川の惨殺死体の件は、やはりＳ号絡みだったらしいです￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　例の王子川の惨殺死体の件は、やはりＳ号絡みだったらしいです。",
+		   NULL, "Pare che il corpo lacerato ritrovato nel fiume Ouji sia legato al gruppo S, come credevamo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　ウラはまだ確認中ですが、ホトケがＳ号のカネを自分が用意した数十の架空口座に上限額いっぱいまで送金して、１億くらいはイったらしいです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "　ウラはまだ確認中ですが、ホトケがＳ号のカネを自分が用意した数十の架空口座に上限額いっぱいまで送金して、１億くらいはイったらしいです。",
+		   NULL, "Stiamo ancora cercando di capire cosa sia successo dietro le quinte, ma sembra che la vittima avesse riempito fino al limite dozzine di conti bancari fittizi con i soldi del gruppo S, arrivando ad accumulare cento milioni di yen.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　背後には元Ｓ号の筋で３～４人の男が絡んでるようです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　背後には元Ｓ号の筋で３〜４人の男が絡んでるようです。",
+		   NULL, "Si ritiene che siano coinvolti anche tre o quattro uomini che facevano parte del gruppo S.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　数千万くらいを引き出して、すでに蒸発しています￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　数千万くらいを引き出して、すでに蒸発しています。",
+		   NULL, "Ma se la sono già filata con milioni di yen in tasca.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　ホトケはその辺りを聞き出すために拷問され、以後の見せしめのために惨殺されたのはほぼ間違いないとのことです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ホトケはその辺りを聞き出すために拷問され、以後の見せしめのために惨殺されたのはほぼ間違いないとのことです。",
+		   NULL, "La vittima è stata torturata per ottenere queste informazioni, ed è chiaro che questo assassinio brutale dovesse servire come esempio per gli altri.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　蒸発した連中は、スゴ腕何人かに追跡させているらしいです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　蒸発した連中は、スゴ腕何人かに追跡させているらしいです。",
+		   NULL, "Sembra che ci siano dei veri prodigi alle calcagna di quelli che sono spariti col malloppo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　あと、親交のある周辺のマル暴に匿わないよう回状を回しています￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あと、親交のある周辺のマル暴に匿わないよう回状を回しています。",
+		   NULL, "Hanno persino distribuito lettere ad altre organizzazioni di yakuza per dir loro di non accoglierli.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　北条鉄平がその一味のひとりであるというウラは未だ取れていません＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条鉄平がその一味のひとりであるというウラは未だ取れていません。",
+		   NULL, "Non c'è ancora nessuna prova che Teppei Houjou sia uno di questi uomini.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　重春課長の見たところでは、何も知らされていないみたいです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　重春課長の見たところでは、何も知らされていないみたいです。",
+		   NULL, "Stando alle parole del caposezione Shigeharu, ancora non si sa niente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　ヒモのくせに信用されてなかったってことですかね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ヒモのくせに信用されてなかったってことですかね。",
+		   NULL, " Houjou era il pappone della vittima, ma lei non si fidava nemmeno un po' di lui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条鉄平は興宮のアパートを出て、雛見沢の元の家に戻った様子です。",
+		   NULL, "Teppei Houjou si è lasciato alle spalle l'appartamento di Okinomiya ed è tornato nella sua vecchia casa di Hinamizawa.", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

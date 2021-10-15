@@ -1,0 +1,185 @@
+void main()
+{
+
+//■研究ノート
+//*Sub_Tips_051
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys11", 56, 0 );
+
+//locate 6,6
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 6 ); }
+	SetStyleOfMessageSwinging( 1 );
+//＜北条家について￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜北条家について＞",
+		   NULL, "<La Famiglia Houjou>", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　オヤシロさまの祟りによって、毎年２人ずつの犠牲者が出ている＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまの祟りによって、毎年２人ずつの犠牲者が出ている。",
+		   NULL, "Ogni anno, la maledizione di Oyashiro-sama designa due vittime.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　すでに４年続き、犠牲者は８人になったわけだが、その半数の人間が北条姓を持つことは特筆に価する＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　すでに４年続き、犠牲者は８人になったわけだが、その半数の人間が北条姓を持つことは特筆に価する。",
+		   NULL, "Facendo i conti, quattro anni di fila fanno otto persone, ma è bene notare che la metà di queste erano membri della stessa famiglia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//※２年目の祟りである転落事故ではダム推進派であった北条氏本人が死に、その妻が失踪した＠（危難失踪扱いでその翌年に死亡宣告＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "※２年目の祟りである転落事故ではダム推進派であった北条氏本人が死に、その妻が失踪した。",
+		   NULL, "Nota: la maledizione del secondo anno, ovvero la caduta mortale, ha coinvolto i coniugi Houjou uccidendo il marito, che era uno strenuo sostenitore del progetto della diga, e facendo sparire la moglie.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（危難失踪扱いでその翌年に死亡宣告）",
+		   NULL, "(Questa venne dichiarata morta l'anno seguente in seguito alla scomparsa in circostanze pericolose.)", Line_Normal);
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+//　４年目の祟りでは北条兄妹の養母である叔母が死に、北条氏の長男が失踪した￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　４年目の祟りでは北条兄妹の養母である叔母が死に、北条氏の長男が失踪した。",
+		   NULL, "La maledizione del quarto anno ha invece colpito la zia dei fratelli Houjou, che faceva le veci di madre adottiva, e ha fatto sparire il fratello maggiore.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　北条家は貧しい家庭で、北条氏の仕事も満帆とは言い難かった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条家は貧しい家庭で、北条氏の仕事も満帆とは言い難かった。",
+		   NULL, "La famiglia Houjou è tra le meno abbienti, ed è difficile dire che il lavoro del signor Houjou procedesse bene.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　親類の縁での再就職をあてに、母方の故郷へ引越す計画があったと言う＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　親類の縁での再就職をあてに、母方の故郷へ引越す計画があったと言う。",
+		   NULL, "A quanto pare, in seguito a una nuova assunzione per merito di legami famigliari, avevano intenzione di ritornare nella casa dei genitori della madre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　そんな北条氏にとって、雛見沢ダム計画による立ち退きと高額な補償金の給付は、まさに渡りに船だったと言えるだろう￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな北条氏にとって、雛見沢ダム計画による立ち退きと高額な補償金の給付は、まさに渡りに船だったと言えるだろう。",
+		   NULL, "Per il signor Houjou lo sfratto, necessario per mettere in atto il progetto di costruzione della diga di Hinamizawa, con il conseguente pagamento di una grossa somma di denaro, era come una manna dal cielo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　北条氏は建設省の交渉初期から積極的に応じ、ダム推進派の雛見沢のまとめ役として抜擢された＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　北条氏は建設省の交渉初期から積極的に応じ、ダム推進派の雛見沢のまとめ役として抜擢された。",
+		   NULL, "Il signor Houjou accolse attivamente le negoziazioni da parte del Ministro delle Infrastrutture sin dai primi stadi e fu selezionato come rappresentante dei sostenitori della diga.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　その過程において、建設省から金銭による買収があったと囁かれるが、真偽はわからない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その過程において、建設省から金銭による買収があったと囁かれるが、真偽はわからない。",
+		   NULL, "Si dice che fosse stato addirittura pagato dal Ministro per prendere questa posizione, ma la verità non è mai venuta a galla.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　だが、ダム推進派は極めて少数だった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、ダム推進派は極めて少数だった。",
+		   NULL, "Tuttavia, i sostenitori della diga erano una minuscola parte della popolazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　しかも、園崎家が強力に地盤を固め、反ダムへの結束を強化し始めると、北条氏を除く全てのダム推進派は反ダムへ鞍替えすることになる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　しかも、園崎家が強力に地盤を固め、反ダムへの結束を強化し始めると、北条氏を除く全てのダム推進派は反ダムへ鞍替えすることになる。",
+		   NULL, "Perdipiù, appena la famiglia Sonozaki rafforzò la sua posizione e garantì supporto a chi si sarebbe opposto alla diga, anche quei pochi alleati del signor Houjou cambiarono in fretta fazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　この時点で雛見沢は完全に反ダムで結束し、北条家はダム計画推進の手先として槍玉に挙げられることになった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この時点で雛見沢は完全に反ダムで結束し、北条家はダム計画推進の手先として槍玉に挙げられることになった。",
+		   NULL, "A quel punto, l'intera Hinamizawa era unita e disposta a combattere la diga, mentre il signor Houjou rimaneva l'ultimo, ridicolo baluardo dei sostenitori del progetto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　反ダム結束の為のスケープゴートにされたと言ってもいいだろう￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　反ダム結束の為のスケープゴートにされたと言ってもいいだろう。",
+		   NULL, "In altre parole, venne usato come capro espiatorio per la coalizione anti-diga.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する。",
+		   NULL, "Alla fine, il progetto crollò tramite lo smembramento perpetrato dalla maledizione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　だが、ダム計画に加担した仇敵への報復は今日でも続けられているのだ...￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、ダム計画に加担した仇敵への報復は今日でも続けられているのだ…。",
+		   NULL, "Ma la punizione nei confronti dei nemici che avevano supportato il progetto della diga continua ancora oggi...", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　ダム計画に加担した、もしくは当時にネガティブな評価を持つ者は今日、ほとんど残っていない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ダム計画に加担した、もしくは当時にネガティブな評価を持つ者は今日、ほとんど残っていない。",
+		   NULL, "Ormai non è rimasto quasi più nessuno di coloro che supportavano la diga, e nemmeno di coloro che venivano visti di sbieco.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　残る祟り候補がいるとすれば、昨年の主婦撲殺事件の被害者の夫である北条鉄平＠北条氏の娘の北条沙都子＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　残る祟り候補がいるとすれば、昨年の主婦撲殺事件の被害者の夫である北条鉄平。",
+		   NULL, "Se rimane un qualche candidato per subire la maledizione, allora questo è il marito della casalinga che è stata pestata a morte lo scorso anno: Teppei Houjou.", Line_WaitForInput);
+	OutputLine(NULL, "北条氏の娘の北条沙都子。",
+		   NULL, " E la figlia del signor Houjou, Satoko Houjou.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+	PlaySE( 3, "wa_024", 56, 64 );
+
+//　奇しくも、残る候補者は２人だ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　奇しくも、残る候補者は２人だ。",
+		   NULL, "Stranamente, sono proprio questi due gli ultimi candidati rimasti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　今年の祟りは、この２人に対して下されるのか...＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　今年の祟りは、この２人に対して下されるのか…？",
+		   NULL, "La maledizione di quest'anno si abbatterà proprio su di loro...?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　この２人を観察する価値は、十二分にある......￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この２人を観察する価値は、十二分にある……。",
+		   NULL, "Ci sono motivi più che sufficienti per osservare ogni loro movimento...", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

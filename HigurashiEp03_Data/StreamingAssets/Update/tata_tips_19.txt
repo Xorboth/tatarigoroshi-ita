@@ -1,0 +1,182 @@
+void main()
+{
+
+//*Sub_Tips_063
+//gosub *tip_s
+
+//■タイトル：　研究ノートⅡ
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	PlayBGM( 1, "msys21", 56, 0 );
+
+//locate 5,7
+	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 7 ); }
+	SetStyleOfMessageSwinging( 1 );
+//＜オヤシロさまについて￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜オヤシロさまについて＞",
+		   NULL, "<Oyashiro-sama>", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　オヤシロさまだが、どういう字で書くのかはあまり知られていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまだが、どういう字で書くのかはあまり知られていない。",
+		   NULL, "Nessuno sa con certezza con quali ideogrammi si scriva \"Oyashiro-sama\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　と言うのも、時代によって様々な修飾詞が付き、微妙に名称が変わったり、当て字が変わったりするため＠本来の正確な名称が何なのか、知る事が大変難しいからだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　と言うのも、時代によって様々な修飾詞が付き、微妙に名称が変わったり、当て字が変わったりするため、",
+		   NULL, "Ciò dipende molto dal periodo storico di riferimento,", Line_WaitForInput);
+	OutputLine(NULL, "本来の正確な名称が何なのか、知る事が大変難しいからだ。",
+		   NULL, " perché è stato chiamato con molti nomi diversi durante il corso dei secoli, impedendo di capire quale fosse l'originale.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　全ての時代に共通するのは、名称の読みに必ず「オヤシロ」の４文字が入るということだけ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全ての時代に共通するのは、名称の読みに必ず「オヤシロ」の４文字が入るということだけ。",
+		   NULL, "L'unica caratteristica condivisa tra tutti i nomi è l'utilizzo delle sillabe \"o\", \"ya\", \"shi\" e \"ro\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　オヤシロさまを祀る「社（やしろ）」が、そのまま礼拝対象になり＠「御社さま」と呼ばれるに至ったと言う説があるが、実にセンスの欠片もない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　オヤシロさまを祀る「社（やしろ）」が、そのまま礼拝対象になり、",
+		   NULL, "Una teoria afferma che il santuario, ovvero \"yashiro\", dedicato a Oyashiro-sama sia diventato, nel tempo, l'oggetto stesso di culto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「御社さま」と呼ばれるに至ったと言う説があるが、実にセンスの欠片もない。",
+		   NULL, " Le persone avrebbero quindi cominciato a chiamarlo \"o-yashiro-sama\", cioè \"onorevole signor santuario\"—ma non ha il minimo senso.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　これに関連するかわからないが、オヤシロさまを祀る高貴な血筋である古手家の人間には、オヤシロさまの血が流れているという＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これに関連するかわからないが、オヤシロさまを祀る高貴な血筋である古手家の人間には、オヤシロさまの血が流れているという。",
+		   NULL, "Non so se ci sia qualche legame, ma si dice che la famiglia Furude, ovvero la famiglia più rispettata in termini di fede nei confronti di Oyashiro-sama, ne abbia ereditato il sangue.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　そして古手家に伝えられる伝説では、八代続いて第一子が女子ならば、八代目のその娘はオヤシロさまの生まれ変わりである...というのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして古手家に伝えられる伝説では、八代続いて第一子が女子ならば、八代目のその娘はオヤシロさまの生まれ変わりである…というのだ。",
+		   NULL, "La leggenda tramandata dalla famiglia Furude afferma che se, per otto generazioni di fila, il primo figlio nato è una femmina, allora l'ottava figlia di questa sequenza sarà la reincarnazione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　この伝説に従うなら、オヤシロさまは「御八代さま」と書くのが正しいように思う＠（この当て字はあくまでも私の思いつきなので、真偽は確かめようもないが￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この伝説に従うなら、オヤシロさまは「御八代さま」と書くのが正しいように思う。",
+		   NULL, "Prendendo la leggenda come riferimento, allora i caratteri usati per il nome di Oyashiro-sama dovrebbero essere \"o\", di \"onorevole\", \"ya\", di \"otto\" e \"shiro\" di \"generazione\".", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（この当て字はあくまでも私の思いつきなので、真偽は確かめようもないが）",
+		   NULL, "(Questa scelta di significati è una cosa che ho pensato io, e non c'è alcun modo di verificarne l'attinenza.)", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　だとするなら、御八代さまは再び降臨することを前提にした名称ということになる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だとするなら、御八代さまは再び降臨することを前提にした名称ということになる。",
+		   NULL, "Se così fosse, allora Oyashiro-sama avrebbe ottenuto questo nome perché le persone erano consapevoli della sua reincarnazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　崇拝対象の再臨は、いくつかの宗教でも見受けられるので、そんなに珍しいものではない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　崇拝対象の再臨は、いくつかの宗教でも見受けられるので、そんなに珍しいものではない。",
+		   NULL, "La seconda venuta di un simbolo della fede avviene in molteplici religioni, perciò non c'è da stupirsi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　だが、さらにその中のいくつかでは、崇拝対象の再臨を、「審判の日」等と呼び、世界の終末を意味するものであることも忘れてはならないだろう￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、さらにその中のいくつかでは、崇拝対象の再臨を、「審判の日」等と呼び、世界の終末を意味するものであることも忘れてはならないだろう。",
+		   NULL, "Ma alcune di queste religioni indicano la seconda venuta dell'oggetto di culto come \"il giorno del giudizio\" o simili, ovvero come la fine del mondo.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　村中の年寄り連中に、目に入れても痛くないくらいに甘やかされている少女、古手梨花＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　村中の年寄り連中に、目に入れても痛くないくらいに甘やかされている少女、古手梨花。",
+		   NULL, "Rika Furude, amata e rispettata dalla popolazione più anziana del villaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　......彼女が、その八代目、「御八代さま」であるという噂がある＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……彼女が、その八代目、「御八代さま」であるという噂がある。",
+		   NULL, "... alcune voci dicono che si tratti dell'ottava generazione, e perciò di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　古手家の家系図はわからないが、少なくとも、過去２代の間、第一子が女子であることは私も確認している￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　古手家の家系図はわからないが、少なくとも、過去２代の間、第一子が女子であることは私も確認している。",
+		   NULL, "Non conosco l'albero genealogico dei Furude, ma posso confermare che il primo figlio delle ultime due generazioni è stata una femmina.", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　雛見沢を見守る少女、古手梨花＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雛見沢を見守る少女、古手梨花。",
+		   NULL, "Rika Furude veglia su Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　彼女の加護を村が失ったなら、どうなるのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　彼女の加護を村が失ったなら、どうなるのか？",
+		   NULL, "Se il villaggio perdesse la sua protettrice, che cosa succederebbe?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　人と鬼は和を失い、どうなるのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人と鬼は和を失い、どうなるのか？",
+		   NULL, "La pace tra uomini e demoni verrebbe meno?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　再び、人食い鬼たちが跋扈する地獄が再現されるのか￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　再び、人食い鬼たちが跋扈する地獄が再現されるのか？",
+		   NULL, "Si creerebbe di nuovo uno scenario da incubo, dove i demoni mangia-uomini devastano a piede libero?", Line_Normal);
+	ClearMessage();
+
+	PlaySE( 3, "wa_021", 56, 64 );
+
+//　泣き、叫び、逃げ惑うしかできないひ弱な人間どもと、それらがいかに美味であったかを思い出した鬼たちの、凄惨な宴＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　泣き、叫び、逃げ惑うしかできないひ弱な人間どもと、それらがいかに美味であったかを思い出した鬼たちの、凄惨な宴。",
+		   NULL, "Demoni che, all'improvviso, ricordano quanto deboli e succulenti siano gli esseri umani, capaci solo di gridare e scappare a gambe levate, per poi trasformarli nel loro adorato banchetto demoniaco.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　......それはどんな光景だろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……それはどんな光景だろう。",
+		   NULL, "... chissà che razza di scena sarebbe.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　想像するだけでも...胸が、躍る￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　想像するだけでも…胸が、躍る。",
+		   NULL, "Anche soltanto immaginarlo... mi fa palpitare il cuore dall'emozione.", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

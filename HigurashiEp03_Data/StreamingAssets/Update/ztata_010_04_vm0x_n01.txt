@@ -1,0 +1,23 @@
+void main()
+{
+}
+
+void dialog000()
+{
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300325", 256, TRUE);
+	OutputLine(NULL, "…ちょっと私、寝ぼけてるみたい。",
+		   NULL, " ... forse sono un po' stanca.", Line_WaitForInput);
+}
+
+void dialog001()
+{
+//「確かに状況証拠は揃ってるけど、......多分、圭ちゃんの推理ははずれだと思う＠......県内のどっかで捕まった覚醒剤でイカれたヤツが、犯行を自供したって言うし。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300344", 256, TRUE);
+	OutputLine(NULL, "「確かに状況証拠は揃ってるけど、……多分、圭ちゃんの推理ははずれだと思う。",
+		   NULL, "\"Le prove di circostanza sono tutte lì... ma credo che la tua deduzione sia errata.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/140300345", 256, TRUE);
+	OutputLine(NULL, "……県内のどっかで捕まったロクデナシが、犯行を自供したって言うし。」",
+		   NULL, " ... la polizia arrestò un poco di buono da qualche parte nella prefettura che sembra fosse andato a costituirsi.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}

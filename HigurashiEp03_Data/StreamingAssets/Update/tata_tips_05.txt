@@ -1,0 +1,250 @@
+void main()
+{
+
+//■タイトル：　検死初見コピー
+//*Sub_Tips_049
+//gosub *tip_s
+//!s100
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	PlayBGM( 1, "msys12", 56, 0 );
+	PlayBGM( 2, "lsys24", 56, 0 );
+//　検死の結果、被害者は以下に従い殺害されたと思われる。/
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　検死の結果、被害者は以下に従い殺害されたと思われる。",
+		   NULL, "L'autopsia suggerisce che la vittima sia stata uccisa nel seguente modo.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//（１）拘束具で全身を拘束
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（１）拘束具で全身を拘束",
+		   NULL, "1. Segni di strette su tutto il corpo", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　抵抗時に出来たと思われる傷痕から、ロープ等でなく、拘束を目的とした専用の拘束台に拘束したものと推定。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　抵抗時に出来たと思われる傷痕から、ロープ等でなく、拘束を目的とした専用の拘束台に拘束したものと推定。",
+		   NULL, "Sul corpo vi sono segni di strette e morse, dovute probabilmente a uno specifico tavolo con cinghie piuttosto che a delle comuni corde.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　両手各指の関節への拘束が特に厳重であるのが特徴。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　両手各指の関節への拘束が特に厳重であるのが特徴。",
+		   NULL, "Soprattutto le falangi delle dita mostrano segni di una forte stretta.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　形状その他から推定して、特注品もしくは自家製である可能性が高い。/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　形状その他から推定して、特注品もしくは自家製である可能性が高い。",
+		   NULL, "È assai probabile che il tavolo fosse stato realizzato appositamente per questo scopo.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//（２）両耳・鼻を鋭利な刃物で切断
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（２）両耳・鼻を鋭利な刃物で切断",
+		   NULL, "2. Naso e orecchie sono stati rimossi con una lama affilata", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　拘束跡その他から推測して、切断する人間の他に少なくとも１人以上の、被害者の首を押さえつける人間がいたものと推定。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　拘束跡その他から推測して、切断する人間の他に少なくとも１人以上の、被害者の首を押さえつける人間がいたものと推定。",
+		   NULL, "I segni di strette e altre prove indicano che ci fosse almeno un'altra persona, oltre a quella che ha rimosso le parti del corpo, che teneva ferma la testa della vittima.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　使用した刃物は複数の可能性があり、その内のひとつは鋏である可能性が高い。/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　使用した刃物は複数の可能性があり、その内のひとつは鋏である可能性が高い。",
+		   NULL, "Plausibile l'utilizzo di più lame, una delle quali riconducibile a un paio di forbici o di cesoie.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//（３）両手の指を五寸釘で貫通
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（３）両手の指を五寸釘で貫通",
+		   NULL, "3. Cinque chiodi conficcati su ogni dito di entrambe le mani", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　両手の各指に対して、各関節毎に１本、計３０本の五寸釘で打ち抜いている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　両手の各指に対して、各関節毎に１本、計３０本の五寸釘で打ち抜いている。",
+		   NULL, "Su ogni falange di ogni dita delle mani sono conficcati dei chiodi, per un totale di trenta.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, " ", GetGlobalFlag(GLinemodeSp));
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　遺体の指は２０センチ四方の板に打ち付けられており、この板は拘束台の一部である可能性が極めて高い。",
+		   NULL, "Le dita della vittima sono state inchiodate su due assi di legno larghe circa venti centimetri; estremamente probabile che si tratti delle assi del tavolo con cinghie.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　またこの拘束台が、そもそもこの行為を行なうために用意されたものである可能性がある。/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　またこの拘束台が、そもそもこの行為を行なうために用意されたものである可能性がある。",
+		   NULL, "Anche questo dimostra che il tavolo potesse avere come scopo originale proprio la tortura.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//（４）腹部切開、及び内臓の切除
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（４）腹部切開、及び内臓の切除",
+		   NULL, "4. Addome inciso, interiora rimosse", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　腹部の切開に当たっては、鋭利な刃物で医学的手法に基づき開腹した可能性がある。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　腹部の切開に当たっては、鋭利な刃物で医学的手法に基づき開腹した可能性がある。",
+		   NULL, "L'incisione all'addome è dovuta a una lama affilata e derivata da una tecnica con reali basi mediche.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　この段階では被害者の生命にはまだ支障はなかったと推定。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この段階では被害者の生命にはまだ支障はなかったと推定。",
+		   NULL, "Si stima che la vittima fosse ancora in vita a questo punto.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　その後、切開部より内臓各部位を分解、切除。その過程で被害者は死亡したものと推定される。/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その後、切開部より内臓各部位を分解、切除。その過程で被害者は死亡したものと推定される。",
+		   NULL, "In seguito, gli organi interni sono stati recisi e rimossi. La vittima dev'essere morta a questo punto del processo.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//（５）遺体の投棄
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（５）遺体の投棄",
+		   NULL, "5. Eliminazione del cadavere", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　被害者の首を市販のペット用首輪でダンベルに括り付けた後、王子川３号暗渠に投棄したものと推定。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　被害者の首を市販のペット用首輪でダンベルに括り付けた後、王子川３号暗渠に投棄したものと推定。",
+		   NULL, "Dopo aver legato un peso al collo della vittima usando un comune guinzaglio da animali, gli assassini l'hanno abbandonata nel terzo canale di scolo del fiume Ouji.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+	PlayBGM( 2, "lsys24", 56, 0 );
+
+//　ダンベルの総重量から、遺体の投棄に少なくとも成人男性が３人以上関与している可能性が高い。/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ダンベルの総重量から、遺体の投棄に少なくとも成人男性が３人以上関与している可能性が高い。",
+		   NULL, "A giudicare dalla mole del peso, è plausibile che siano stati necessari non meno di tre uomini adulti per disfarsi del corpo.", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 10, TRUE );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+	PlaySE( 3, "wa_021", 56, 64 );
+//!sd
+
+//　大石さんへ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大石さんへ。",
+		   NULL, "Per Ooishi-san.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　頼まれてた、例の王子川惨殺死体の検死初見コピーです＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　頼まれてた、例の王子川惨殺死体の検死初見コピーです。",
+		   NULL, "Ecco una copia dell'autopsia preliminare eseguita sul corpo martoriato ritrovato nel fiume Ouji.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　重春課長はＳ号じゃないかと見てるみたいです＠大石さんはどう思います￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　重春課長はＳ号じゃないかと見てるみたいです。",
+		   NULL, "Il capo Shigeharu ritiene che questo possa avere un legame con il gruppo S.", Line_WaitForInput);
+	OutputLine(NULL, "大石さんはどう思います？",
+		   NULL, " Tu cosa ne pensi, Ooishi-san?", Line_Normal);
+	ClearMessage();
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

@@ -1,0 +1,181 @@
+void main()
+{
+}
+
+void dialog000()
+{
+//「ろくでなしの寄生虫だからね＠...自分ひとりじゃ炊事は愚か、掃除ひとつできないし。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps2/03/140300007", 540, TRUE);
+	OutputLine(NULL, "「ろくでなしの怠け者だからね。",
+		NULL, "\"Perché è uno sciattone buono a nulla.", Line_WaitForInput);
+}
+
+void dialog001()
+{
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040102", 256, TRUE);
+	OutputLine(NULL, "　…沙都子が重宝なわけだから、何もひどい扱いをしているってわけじゃないかもしれないだろ…？」",
+		NULL, " ... se Satoko è così importante, allora non dovrebbe avere motivo di maltrattarla, dico bene...?\"", Line_Normal);
+}
+
+void dialog002()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200023", 256, TRUE);
+	OutputLine(NULL, "　雛見沢に帰ってきた理由だって、一緒に暮らしてた相手が失踪して生活できなくなったからでしょ？",
+		NULL, "È tornato solo perché la donna su cui faceva affidamento è scomparsa e lui non è in grado di badare a se stesso.", Line_WaitForInput);
+}
+
+void dialog003()
+{
+//「...............だいぶ、ひどいのか...？＠
+//　...魅音もレナも、...聞きたいことは同じだったのかもしれない＠
+//　...誰も口を挟まず、ただじっと梨花ちゃんの返事を待った￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040103", 256, TRUE);
+	OutputLine(NULL, "「……………どう、なんだ…？」",
+		   NULL, "\"...... com'è... la situazione...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040104", 256, TRUE);
+	OutputLine(NULL, "　いろいろと状況証拠は必要だろうけど、こういうのって問題だろ？",
+		   NULL, " Dovremmo ottenere delle prove per affermarlo, ma la situazione è grave, no?", Line_WaitForInput);
+}
+
+void dialog005()
+{
+	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200037", 256, TRUE);
+	OutputLine(NULL, "…あるいはそういうのって、興宮の相談所の人とかに相談できないの？」",
+		   NULL, " ... non possiamo parlarne con gli assistenti sociali di Okinomiya?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040103", 256, TRUE);
+	OutputLine(NULL, "興宮の相談所に。",
+		   NULL, " Ai servizi sociali di Okinomiya.", Line_WaitForInput);
+}
+
+void dialog007()
+{
+//「しばらくは毎週決まった日に民生委員さんが訪問してたみたい＠叔父夫婦も、自分たちが見張られてることを気にして、目立ついじめはしなくなったらしいけど＠.........それで済む訳ないでしょ...普通。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s03/03/mio040106", 256, TRUE);
+	OutputLine(NULL, "「しばらくは毎週決まった日に担当の職員さんが訪問してたみたい。",
+		   NULL, "\"L'assistente sociale fece visita a casa Houjou nell'arco di più settimane, sempre lo stesso giorno.", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog008()
+{
+//alt ということはつまり……しばらくは黙って見てろ…ってことなんだよね…？
+	ModPlayVoiceLS(4, 2, "ps3/s03/02/140200041_2", 256, TRUE);
+	OutputLine(NULL, "…ということはつまり……しばらくは黙って見てろ…ってことなんだよね…？」",
+		   NULL, " ... questo significa... che possiamo solo stare buoni e aspettare pazientemente, no?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	ModPlayVoiceLS(4, 1, "ps2/01/140100078", 540, TRUE);
+	OutputLine(NULL, "　……保護者のいない子供って、……施設みたいなところに入れられちゃうんじゃないっけ…？」",
+		   NULL, " ... i bambini senza tutori... non dovrebbero andare presso qualche istituzione pubblica...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog010()
+{
+	ModPlayVoiceLS(4, 3, "ps2/03/140300081", 540, TRUE);
+	OutputLine(NULL, "そのお陰で梨花ちゃんは保護者から離れての生活を認められているってわけ。",
+		   NULL, " Per questo motivo, a Rika-chan è permesso vivere separata dal suo tutore.", Line_WaitForInput);
+}
+
+void dialog011()
+{
+//　そんな日々に終止符を打ってくれたのは、......どこの誰とも知らない、覚醒剤常習癖のおかしなヤツだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな日々に終止符を打ってくれたのは、……どこの誰とも知らない、薬物中毒のおかしなヤツだ。",
+		   NULL, "Colui che ha messo fine a quei giorni da incubo... è stato un qualche tossicodipendente dall'identità sconosciuta.", Line_Normal);
+	ClearMessage();
+}
+
+void dialog012()
+{
+//　沙都子の手に、スーパーの袋を渡す＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　たまらなくなって沙都子の手を、そっと握る。",
+		   NULL, "Prendo delicatamente la mano di Satoko, rimasta in silenzio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　.........その時、沙都子の手の甲に、/
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………その時、沙都子の手のひらの熱が、異常なほど、",
+		   NULL, "... e sento che è calda...", Line_ContinueAfterTyping);
+
+	FadeOutBGM( 2, 1000, TRUE );
+
+//アザのようなものがあることに気付く￥
+	OutputLine(NULL, "……そう、汗ばむほどに火照っているのに気づいた。",
+		   NULL, " ben al di sopra della temperatura normale; la mano di Satoko è rossa e sudata.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("black", 400 );
+
+//「......おい、沙都子...このアザ、...どうしたんだよ...？！＠
+//　...自分で、何て白々しいことを言ってるかよくわかる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040112", 256, TRUE);
+	OutputLine(NULL, "「……おい、沙都子…お前、まだ熱が…？！」",
+		   NULL, "\"... ehi, Satoko... hai ancora la febbre?!\"", GetGlobalFlag(GLinemodeSp));
+
+	ClearMessage();
+
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacter(3, 4, "sprite/sa1a_muhyou_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawSceneWithMask("background/ho1_02", "up", 0, 0, 300 );
+
+	PlayBGM( 1, "msys18", 56, 0 );
+
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04012", 256, TRUE);
+	OutputLine(NULL, "「…………今年の夏風邪は、なかなかしつこいようですわね。",
+		   NULL, "\"...... pare che non mi sia ancora liberata della febbre stagionale.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s03/04/sato04013", 256, TRUE);
+	OutputLine(NULL, "気になさらないで下さいませ。」",
+		   NULL, " Non farci caso.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog013()
+{
+//「......沙都子ちゃんは多分、...そういう虐めに耐えるのを試練だと考えているかもしれません。＠
+//「試練＠　......変な宗教じゃあるまいし...！！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04005", 256, TRUE);
+	OutputLine(NULL, "「……沙都子ちゃんは多分、…そういう仕打ちに耐えるのを試練だと考えているかもしれません。」",
+		   NULL, "\"... credo che Satoko-chan... consideri questo cattivo trattamento una sorta di prova.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04006", 256, TRUE);
+	OutputLine(NULL, "「あの家で悟史くんの帰りを待つのが、沙都子ちゃんの生きる理由でもあります。",
+		   NULL, "\"Perché la ragione di vita di Satoko-chan è quella di aspettare a casa il ritorno di Satoshi-kun.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s03/10/iri04007", 256, TRUE);
+	OutputLine(NULL, "………兄に捨てられた少女が、…何に生きる理由を見出したか。",
+		   NULL, " ...... quella ragazzina abbandonata dal fratello... come può trovare adesso un'altra ragione di vita?", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog015()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s03/01/kei040116", 256, TRUE);
+	OutputLine(NULL, "「…俺は、………本当に沙都子が危ないと感じたら、…誰の意思も聞かずに行動します。",
+		   NULL, "\"... se... credessi che Satoko fosse davvero in pericolo... prenderei posizione senza chiedere l'opinione altrui. ", GetGlobalFlag(GLinemodeSp));
+}
