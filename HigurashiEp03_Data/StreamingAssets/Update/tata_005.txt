@@ -4115,7 +4115,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　多少の怪我の応急手当なら慣れてるはずなんだ。",
-		   NULL, "Dev'essere abituato a curare le ferie con il primo soccorso.", Line_Normal);
+		   NULL, "Dev'essere abituato a curare le ferite con il primo soccorso.", Line_Normal);
 	ClearMessage();
 	DisableWindow();
 	ModDrawCharacterWithFiltering(3, 10, "sprite/iri1_def1_", "0", "right", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 20, 300, TRUE );

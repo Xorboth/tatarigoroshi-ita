@@ -6577,7 +6577,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この男、狙いは初めから…世界かぁあッ！！",
-		   NULL, "\"Questo ragazzo... fin dall'inizio... ha sempre puntato alla fame mondiale!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Questo ragazzo... fin dall'inizio... ha sempre puntato alla fama mondiale!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

@@ -4555,7 +4555,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101086", 256, TRUE);
 	OutputLine(NULL, "「…………お前に褒められたくてやったわけじゃなかった。",
-		   NULL, "\"...... non l'ho fatto perché ricevere le tue attenzioni.", Line_WaitForInput);
+		   NULL, "\"...... non l'ho fatto per ricevere le tue attenzioni.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s03/01/140101087", 256, TRUE);
 	OutputLine(NULL, "…お前に、幸せになってさえもらえればよかった。",
 		   NULL, " ... ma solo perché tu tornassi di nuovo a essere felice.", Line_WaitForInput);

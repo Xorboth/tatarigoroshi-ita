@@ -845,7 +845,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音は小さく頷く。",
-		   NULL, "Mio annuisce debolmente.", Line_Normal);
+		   NULL, "Mion annuisce debolmente.", Line_Normal);
 	ClearMessage();
 
 //「...............正体不明、なぜ起こるのかも不明＠......個々には解決しながらも、全体で見れば不可解な、連続怪死、連続失踪事件＠......でもひとつだけ共通することがある＠それは...............必ず村の仇敵が標的に選ばれること。￥
