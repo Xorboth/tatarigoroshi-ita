@@ -5288,7 +5288,7 @@ void main()
 //　４年前の犠牲者と噂されるバラバラ殺人の犠牲者は事件の直前、何度も大石と接触していたことが知られている＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　４年前の犠牲者と噂されるバラバラ殺人の犠牲者は事件の直前、何度も大石と接触していたことが知られている。",
-		   NULL, "Quattro anni fa, si è venuto a sapere che la vittima dello smembramento—che pare fosse stata scelta come sacrificio—abbia incontrato Ooishi più volte prima dell'incidente.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Quattro anni fa, si è venuto a sapere che l'uomo fatto a pezzi—che pare fosse stata scelta come sacrificio—avesse incontrato Ooishi più volte prima dell'incidente.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　３年前の犠牲者である沙都子の両親＠

@@ -119,7 +119,7 @@ void main()
 //　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　結局、ダム計画は初めてのオヤシロさまの祟りである「バラバラ殺人事件」を最後に瓦解する。",
-		   NULL, "Alla fine, il progetto crollò tramite lo smembramento perpetrato dalla maledizione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alla fine, il progetto crollò dopo che quell'uomo fu fatto a pezzi dalla maledizione di Oyashiro-sama.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　だが、ダム計画に加担した仇敵への報復は今日でも続けられているのだ...￥

@@ -92,7 +92,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…一番最初の祟りで失踪したバラバラ殺人犯も、この沼に死体を捨てようとして誤って溺れてしまったと噂されている。",
-		   NULL, "... e il colpevole dietro allo smembramento che è scomparso l'anno della prima maledizione—si dice che avesse cercato di gettare il cadavere nella palude ma che ci fosse finito dentro anche lui per errore.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... e il colpevole dietro al caso dell'uomo fatto a pezzi che scomparve l'anno della prima maledizione—si dice che avesse cercato di gettare il cadavere nella palude ma che ci fosse finito dentro anche lui per errore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 //　...その死体が浮いたとか、見つかったという話は聞かない＠

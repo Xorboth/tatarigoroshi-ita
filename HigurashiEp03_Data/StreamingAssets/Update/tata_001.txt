@@ -363,14 +363,14 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "「何よ、こないの捨てたんわ……。」",
-		   NULL, "\"Cosa? Solo altra spazzatura...\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"Eh? Solo altra spazzatura...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "", 128, TRUE);
 	OutputLine(NULL, "「……お、……大家さん、それ、……それッ！！」",
-		   NULL, "\"... si... signor locarore, quello è... quello è!!\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"... si... signor locatore, quello è... quello è...!!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -448,7 +448,7 @@ void main()
 	OutputLine(NULL, "「あ、どもー！",
 		   NULL, "\"Ah, salve!", Line_WaitForInput);
 	OutputLine(NULL, "　お疲れ様です。」",
-		   NULL, " Ottimo lavoro quest'oggi.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Grazie del suo contributo.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
