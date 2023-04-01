@@ -1609,7 +1609,7 @@ void main()
 //　カップラーメンなんかはたまに食べるからおいしいのであって、三食食べたら、絶対に飽きるに決まってる＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とは言ったものの…。",
-		   NULL, "Ma anche se mi dispiaciuto...", Line_WaitForInput);
+		   NULL, "Ma anche se mi dico dispiaciuto...", Line_WaitForInput);
 	OutputLine(NULL, "やっぱり…三食カレーってわけにはいかない。",
 		   NULL, " ... non posso mangiare sempre e solo curry.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
