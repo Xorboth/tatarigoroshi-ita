@@ -544,7 +544,7 @@ void main()
 		   NULL, " dev'essere una bugia.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25480", 256, TRUE);
 	OutputLine(NULL, "こんなのどこかの仕出し弁当の中身を移し変えただけに違いない。",
-		   NULL, " Deve aver scambiato il contenuto del suo bento con uno di quelli preconfezionati.", Line_WaitForInput);
+		   NULL, "Deve aver scambiato il contenuto del suo bento con uno di quelli già pronti.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25490", 256, TRUE);
 	OutputLine(NULL, "こんな純日本風な料理を魅音が！",
 		   NULL, " Una serie di piatti così tipicamente giapponesi...!", Line_WaitForInput);
@@ -556,7 +556,7 @@ void main()
 
 	ModPlayVoiceLS(4, 1, "ps3/s19/01/hr_kei25510", 256, TRUE);
 	OutputLine(NULL, "　あの園崎魅音が作れるわけがなぁいいい！！！」",
-		   NULL, " Mion Sonozaki non potrebbe mai realizzare una cosa simile!!!\"", Line_Continue);
+		   NULL, " Mion Sonozaki non potrebbe mai realizzarli!!!\"", Line_Continue);
 //!sd/
 	SetSpeedOfMessage( FALSE, 0, );
 	PlaySE( 3, "wa_006", 56, 64 );
@@ -1903,7 +1903,7 @@ void main()
 		   NULL, "\"Esatto.", Line_Continue);
 	Wait( 800 );
 	OutputLine(NULL, "俺は下手だ。",
-		   NULL, " Non sono abbastanza bravo.", Line_Continue);
+		   NULL, " Non sono bravo.", Line_Continue);
 	Wait( 1200 );
 	OutputLine(NULL, "昨日、大見得を切ったのが情けなるくらいに料理は下手だ。",
 		   NULL, " Anzi, sono talmente negato che la mia performance di ieri è stata pietosa.", Line_Continue);
@@ -3789,7 +3789,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と、明らかに沙都子を対象にした言葉を、俺に対して言う。",
-		   NULL, "Rena prosegue guardando me ma pronunciando parole chiaramente dirette a Satoko.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Rena prosegue guardando me, ma pronunciando parole chiaramente dirette a Satoko.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
