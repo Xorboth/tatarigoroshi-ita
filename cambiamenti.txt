@@ -1,3 +1,7 @@
+1.0.4 [04-01-2024]:
+ - Aggiornata la traduzione all'ultima versione della patch per Tatarigoroshi di 07th-Mod (commit d9670d2b751c04164afccf7d269b05da38e50151 del 15-08-2023)
+ - Corretti alcuni errori
+
 1.0.3 [27-05-2023]:
  - Aggiornata la traduzione, correggendo vari errori ed editando alcune frasi
 
