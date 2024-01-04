@@ -2884,7 +2884,7 @@ void main()
 //　はぅ～～、ほっぺだけでご飯三杯はいける～♪＠
 	ModPlayVoiceLS(4, 2, "ps3/s19/02/500200505", 256, TRUE);
 	OutputLine(NULL, "　はぅ〜〜、ほっぺだけでご飯三杯はいける〜♪」",
-		   NULL, " Hau~~ Potrei mangiarle le guance tutti giorni e a ogni pasto~.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Hau~~ Potrei mangiarle le guance tutti i giorni e a ogni pasto~.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

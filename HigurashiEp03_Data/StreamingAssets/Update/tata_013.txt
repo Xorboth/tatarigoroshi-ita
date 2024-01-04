@@ -2052,12 +2052,12 @@ void main()
 		   NULL, " ... io... il tuo Nii-nii ti salverà...\"", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400193", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2025", 256, TRUE);
 	OutputLine(NULL, "「…………………ごせんさんじゅうきゅー…。",
 		   NULL, "\"......... cinquemilatrentanove...", Line_WaitForInput);
 
 //　...？＠
-	ModPlayVoiceLS(4, 4, "ps2/04/140400194", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2026", 540, TRUE);
 	OutputLine(NULL, "……ごせん、ごほ！……よんじゅー……はぁ…………はあ…………！」",
 		   NULL, " ... cinquemi—coff! ... quaranta... anf... aahh......!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2086,12 +2086,12 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100932", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2092", 256, TRUE);
 	OutputLine(NULL, "「沙都子…お前、……数を数えてるのか？！",
 		   NULL, "\"Satoko... tu... stavi contando?!", Line_WaitForInput);
 
 //　...よく、小さい子供をお風呂に入れる時、...百数えたら出ていいよ...なんてやるじゃないか......＠
-	ModPlayVoiceLS(4, 1, "ps2/01/140100933", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2093", 256, TRUE);
 	OutputLine(NULL, "　…なんで…ッ！！」",
 		   NULL, " ... perché...?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2116,13 +2116,13 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100934", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2094", 256, TRUE);
 	OutputLine(NULL, "「ば、………馬鹿野郎ッ！！",
 		   NULL, "\"Razza... di stupida!!", Line_WaitForInput);
 
 
 //「...........................まん.........。＠
-	ModPlayVoiceLS(4, 1, "ps2/01/140100935", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2095", 256, TRUE);
 	OutputLine(NULL, "　お前の家の風呂は…いくつ数える決まりになってんだよッ！！」",
 		   NULL, " Per quanto ancora... avevi intenzione di rimanere a contare nella vasca da bagno?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2130,7 +2130,7 @@ void main()
 
 //　......耳を疑い、...沙都子の常識を疑う＠...い、一万だってッ？￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400195", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2027", 256, TRUE);
 	OutputLine(NULL, "「………………………まん………。」",
 		   NULL, "\"............ dieci...mi...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2147,19 +2147,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100936", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2096", 256, TRUE);
 	OutputLine(NULL, "「ふ、ふざけるな馬鹿野郎ッ！！",
 		   NULL, "\"Sei davvero una stupida!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100937", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2097", 256, TRUE);
 	OutputLine(NULL, "　一万なんて数えられる馬鹿がどこにいるんだよッ！！",
 		   NULL, " Chi diavolo si metterebbe a contare fino a diecimila?!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100938", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2098", 256, TRUE);
 	OutputLine(NULL, "　数えられるわけねえだろ？！",
 		   NULL, " Non ce la faresti mai!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100939", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2099", 256, TRUE);
 	OutputLine(NULL, "　その前に茹って死んじまうに決まってんだろ？！",
 		   NULL, " Moriresti bollita prima di finire il conto!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100940", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2100", 256, TRUE);
 	OutputLine(NULL, "　どうしてこんなことに…ッ！！！」",
 		   NULL, " Perché lo stavi facendo...?!?!\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2167,7 +2167,7 @@ void main()
 
 //「.....................、......叔父......まが.........。￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400196", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2028", 256, TRUE);
 	OutputLine(NULL, "「…………………、……叔父……まが………。」",
 		   NULL, "\"......... lo... zio...\"", Line_Normal);
 	ClearMessage();
@@ -2520,7 +2520,7 @@ void main()
 
 //「.........バスタオル.........痛い.........。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 4, "ps2/04/140400198", 540, TRUE);
+	ModPlayVoiceLS(4, 4, "org/satoko2029", 256, TRUE);
 	OutputLine(NULL, "「………バスタオル………痛い………。」",
 		   NULL, "\"... l'asciugamano... mi fa male...\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

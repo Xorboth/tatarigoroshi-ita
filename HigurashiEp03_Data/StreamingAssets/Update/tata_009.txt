@@ -471,20 +471,44 @@ void main()
 
 //「やぁ、申し訳ないね＠君、雛見沢の人だよね？＠
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_009_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_009_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "org/tomitake2000", 256, TRUE);
+	OutputLine(NULL, "「やぁ、申し訳ないね。",
+		   NULL, "\"Ehi, scusami.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake2001", 256, TRUE);
+	OutputLine(NULL, "君、雛見沢の人だよね？」",
+		   NULL, " Sei di Hinamizawa per caso?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //dwaveplay 1
 
 //「...............そうですけど。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi2053", 256, TRUE);
+	OutputLine(NULL, "「……………そうですけど。」",
+		   NULL, "\"...... sì, perché?\"", Line_Normal);
+	ClearMessage();
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_009_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_009_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+//　この人は......、顔を何度か見たことがある＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この人は……、顔を何度か見たことがある。",
+		   NULL, "Ho già visto questa persona qualche volta.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　......そうだ、思い出した＠
+//　......東京に住んでるフリーのカメラマンの富竹とかって言う人で＠季節のたびに熱心に雛見沢に訪れては撮影をしてる...なんて話を魅音辺りに聞いたような￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そうだ、思い出した。",
+		   NULL, "... giusto, ora ricordo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……東京に住んでるフリーのカメラマンの富竹とかって言う人で、",
+		   NULL, "... mi pare che si chiami Tomitake e che sia un fotografo freelancer che vive a Tokyo.", Line_WaitForInput);
+	OutputLine(NULL, "季節のたびに熱心に雛見沢に訪れては撮影をしてる…なんて話を魅音辺りに聞いたような。",
+		   NULL, " Visita Hinamizawa a ogni cambio di stagione per scattare delle foto... o almeno, così mi hanno detto Mion e le altre.", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -608,11 +632,54 @@ void main()
 
 //「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
 //　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "org/tomitake2002", 256, TRUE);
+	OutputLine(NULL, "「僕は富竹。",
+		   NULL, "\"Mi chiamo Tomitake. Dammi del tu.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake2003", 256, TRUE);
+	OutputLine(NULL, "フリーカメラマンさ。",
+		   NULL, " Sono un fotografo freelance.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake2004", 256, TRUE);
+	OutputLine(NULL, "専門は野鳥と風景。",
+		   NULL, " Specializzato in uccelli e paesaggi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake2005", 256, TRUE);
+	OutputLine(NULL, "まだまだ無名だけどね。」",
+		   NULL, " Anche se ancora non mi conosce nessuno.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 3){ModCallScriptSection("ztata_009_vm0x_n01","dialog003");}
-	if(GetGlobalFlag(GCensor) <= 2){ModCallScriptSection("ztata_009_vm00_n01","dialog003");}
-	//VoiceMatchingEnd
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな。",
+		   NULL, "È un po' surreale che si presenti mentre gli sto facendo strada verso il santuario, ma ora che ha detto come si chiama, sarà meglio contraccambiare.", Line_Normal);
+	ClearMessage();
+
+//「前原です＠...まぁその、よろしく。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "org/keiichi2054", 256, TRUE);
+	OutputLine(NULL, "「前原です。",
+		   NULL, "\"Io sono Maebara.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi2055", 256, TRUE);
+	OutputLine(NULL, "…まぁその、よろしく。」",
+		   NULL, " ... piacere di conoscerti.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//「前原くんかい＠　よろしくね！＠
+//　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "org/tomitake2006", 256, TRUE);
+	OutputLine(NULL, "「前原くんかい！",
+		   NULL, "\"Maebara-kun?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "org/tomitake2007", 256, TRUE);
+	OutputLine(NULL, "　よろしくね！」",
+		   NULL, " Il piacere è mio!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何だか能天気そうなおっさんだったが、…昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった。",
+		   NULL, "Ha l'aria un po' goffa... ma è comunque un piacere conoscere uno così dopo essermi preoccupato per Satoko per tutta la notte.", Line_Normal);
 
 	ClearMessage();
 	DisableWindow();
@@ -2477,13 +2544,13 @@ void main()
 
 //「沙都子が風邪なんかじゃないことは、俺たちが一番知ってるだろ＠.........例え冗談でも、二度とそういう白々しいことを言うな＠...次は怒るからな。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100302", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2056", 256, TRUE);
 	OutputLine(NULL, "「沙都子が風邪なんかじゃないことは、俺たちが一番知ってるだろ。",
 		   NULL, "\"Sappiamo tutti benissimo che non ha preso alcun raffreddore, giusto?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100303", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2057", 256, TRUE);
 	OutputLine(NULL, "………例え冗談でも、二度とそういう白々しいことを言うな。",
 		   NULL, " ... non mettere su questa scenetta mai più, nemmeno per scherzo.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100304", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2058", 256, TRUE);
 	OutputLine(NULL, "…次は怒るからな。」",
 		   NULL, " ... o la prossima volta mi arrabbierò sul serio.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2959,7 +3026,7 @@ void main()
 
 //「............俺は、...沙都子がどうして叔父にいじめられてるのを耐えてるか、知ってる。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100324", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2059", 256, TRUE);
 	OutputLine(NULL, "「…………俺は、…沙都子がどうして叔父にいじめられてるのを耐えてるか、知ってる。」",
 		   NULL, "\"...... io so... perché Satoko sta sopportando suo zio.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2975,17 +3042,13 @@ void main()
 
 //「......昔の沙都子は、...虐められると、...きっと泣きながら兄の背中に隠れてた＠......でも結局、...そのせいで兄が逃げてしまったんだと、!w1000......沙都子は思ってる。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100325", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2060", 256, TRUE);
 	OutputLine(NULL, "「……昔の沙都子は、…虐められると、…きっと泣きながら兄の背中に隠れてた。",
 		   NULL, "\"... tempo fa, quando Satoko veniva presa di mira... e maltrattata... non faceva altro che piangere e nascondersi dietro suo fratello.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100326", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2061", 256, TRUE);
 	OutputLine(NULL, "……でも結局、…そのせいで兄が逃げてしまったんだと、",
-		   NULL, " ... ma tutto questo... alla fine...", Line_Continue);
-
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1000 );
-	// (backup) SetValidityOfInput( TRUE );
-
+		   NULL, " ... ma tutto questo... alla fine...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi2062", 256, TRUE);
 	OutputLine(NULL, "……沙都子は思ってる。」",
 		   NULL, " secondo lei è il motivo del perché lui l'abbia abbandonata.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3033,14 +3096,14 @@ void main()
 //　みんな、...俯く＠
 //　.........みんな、...同じことを考えているのだ...￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100327", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2063", 256, TRUE);
 	OutputLine(NULL, "「……沙都子は、叔父のいじめに耐えれば兄が帰ってくると信じることによって、…今を耐え抜こうとしてるのかもしれない。",
 		   NULL, "\"... Satoko crede che suo fratello tornerà se riuscirà a sopportare gli abusi... e forse è per questo che non vuole l'aiuto di nessuno.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100328", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2064", 256, TRUE);
 	OutputLine(NULL, "でも、…そんな思い込みと悟史が帰ってくるのはまったく無関係なことだ。",
 		   NULL, "Tuttavia... questa è solo la sua idea, e non ha niente a che fare con il ritorno di Satoshi.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100329", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2065", 256, TRUE);
 	OutputLine(NULL, "………沙都子には悪いが、…それが現実だ。」",
 		   NULL, " .... mi duole dirlo... ma è la verità.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3102,10 +3165,10 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100336", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2066", 256, TRUE);
 	OutputLine(NULL, "「もちろん、公的機関への通報で沙都子が保護されるのが確定してからだ。",
 		   NULL, "\"Certo, ma solo quando saremo sicuri che riferire questa storia alle autorità garantirà la protezione di Satoko.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100337", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2067", 256, TRUE);
 	OutputLine(NULL, "…その確認のない内は、沙都子をかえって危険にさらすこともありえるからな。」",
 		   NULL, " ... senza questa certezza, rischiamo soltanto di aggravare la sua situazione.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3117,10 +3180,10 @@ void main()
 //「.........難しいね＠...先生との会話の中でその確約ってのが取れるわけ？＠
 //　自信なんかない＠......でも、やらなきゃならないだろ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps2/03/140300148", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2055", 256, TRUE);
 	OutputLine(NULL, "「………難しいね。",
 		   NULL, "\"... è complicato.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 3, "ps2/03/140300149", 540, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion2056", 256, TRUE);
 	OutputLine(NULL, "…先生との会話の中でその確約ってのが取れるわけ？」",
 		   NULL, " ... secondo te riusciremo a strappare una promessa concreta alla maestra?\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -3971,22 +4034,22 @@ void main()
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/140100378", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2068", 256, TRUE);
 	OutputLine(NULL, "「相当なんてもんじゃないぞ！！",
 		   NULL, "\"Non è solo grave!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100379", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2069", 256, TRUE);
 	OutputLine(NULL, "　すぐにだ！！",
 		   NULL, " Dovete fare qualcosa!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100380", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2070", 256, TRUE);
 	OutputLine(NULL, "　今すぐ何とかしろ！！",
 		   NULL, " Adesso!!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps2/01/140100381", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2071", 256, TRUE);
 	OutputLine(NULL, "　通報するならどこへだっていい！！",
 		   NULL, " Se dovete segnalarlo, non m'importa il destinatario!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100382", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2072", 256, TRUE);
 	OutputLine(NULL, "　でもな、もしも様子見なんてことになってみろ！！",
 		   NULL, " Ma giuro che se finirà di nuovo con un aspettiamo e vediamo...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s03/01/140100383", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi2073", 256, TRUE);
 	OutputLine(NULL, "　ただじゃ済まさないからなぁああぁあぁあッ！！！」",
 		   NULL, " io non vi perdonerò mai!!!\"", Line_Normal);
 	ClearMessage();

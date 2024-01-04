@@ -704,7 +704,7 @@ void main()
 //　今になって悟る俺＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今になって悟る俺。",
-		   NULL, "In quel momento, ho un'illuminazione.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "In quel momento, capisco una cosa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

@@ -4,94 +4,14 @@ void main()
 
 void dialog001()
 {
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「やぁ、申し訳ないね。",
-		   NULL, "\"Ehi, scusami.", Line_WaitForInput);
-	OutputLine(NULL, "君、雛見沢の人だよね？」",
-		   NULL, " Sei di Hinamizawa per caso?\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 }
 
 void dialog002()
 {
-//「...............そうですけど。￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「……………そうですけど。」",
-		   NULL, "\"...... sì, perché?\"", Line_Normal);
-	ClearMessage();
-
-//　この人は......、顔を何度か見たことがある＠
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　この人は……、顔を何度か見たことがある。",
-		   NULL, "Ho già visto questa persona qualche volta.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-//　......そうだ、思い出した＠
-//　......東京に住んでるフリーのカメラマンの富竹とかって言う人で＠季節のたびに熱心に雛見沢に訪れては撮影をしてる...なんて話を魅音辺りに聞いたような￥
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……そうだ、思い出した。",
-		   NULL, "... giusto, ora ricordo.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……東京に住んでるフリーのカメラマンの富竹とかって言う人で、",
-		   NULL, "... mi pare che si chiami Tomitake e che sia un fotografo freelancer che vive a Tokyo.", Line_WaitForInput);
-	OutputLine(NULL, "季節のたびに熱心に雛見沢に訪れては撮影をしてる…なんて話を魅音辺りに聞いたような。",
-		   NULL, " Visita Hinamizawa a ogni cambio di stagione per scattare delle foto... o almeno, così mi hanno detto Mion e le altre.", Line_Normal);
 }
 
 void dialog003()
 {
-
-//「僕は富竹＠フリーカメラマンさ＠専門は野鳥と風景＠まだまだ無名だけどね。＠
-//　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「僕は富竹。",
-		   NULL, "\"Mi chiamo Tomitake. Dammi del tu.", Line_WaitForInput);
-	OutputLine(NULL, "フリーカメラマンさ。",
-		   NULL, " Sono un fotografo freelance.", Line_WaitForInput);
-	OutputLine(NULL, "専門は野鳥と風景。",
-		   NULL, " Specializzato in uccelli e paesaggi.", Line_WaitForInput);
-	OutputLine(NULL, "まだまだ無名だけどね。」",
-		   NULL, " Anche se ancora non mi conosce nessuno.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ただ神社に案内するだけの関係で、自己紹介というのも滑稽な話だが、名乗られた以上、自分も名乗らないわけにはいかないしな。",
-		   NULL, "È un po' surreale che si presenti mentre gli sto facendo strada verso il santuario, ma ora che ha detto come si chiama, sarà meglio contraccambiare.", Line_Normal);
-	ClearMessage();
-
-//「前原です＠...まぁその、よろしく。＠
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「前原です。",
-		   NULL, "\"Io sono Maebara.", Line_WaitForInput);
-	OutputLine(NULL, "…まぁその、よろしく。」",
-		   NULL, " ... piacere di conoscerti.\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-
-//「前原くんかい＠　よろしくね！＠
-//　何だか能天気そうなおっさんだったが、...昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった￥
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "", 128, TRUE);
-	OutputLine(NULL, "「前原くんかい！",
-		   NULL, "\"Maebara-kun?", Line_WaitForInput);
-	OutputLine(NULL, "　よろしくね！」",
-		   NULL, " Il piacere è mio!\"", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　何だか能天気そうなおっさんだったが、…昨夜から沙都子のことで頭を悩ませ、窒息しかかっていた俺には、なんだか心地よかった。",
-		   NULL, "Ha l'aria un po' goffa... ma è comunque un piacere conoscere uno così dopo essermi preoccupato per Satoko per tutta la notte.", Line_Normal);
-
 }
 
 void dialog004()

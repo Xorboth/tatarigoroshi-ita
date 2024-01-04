@@ -177,7 +177,7 @@ void main()
 		   NULL, "\"Una donna che si mette a rubare i soldi del pizzo...", Line_Continue);
 	Wait(2700);
 	OutputLine(NULL, "裏に男がいそうじゃのう。",
-		   NULL, " doveva esserci un uomo a tirare le fila.", Line_WaitForInput);
+		   NULL, " doveva esserci un uomo a muovere i fili.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443200051", 256, TRUE);
 	OutputLine(NULL, "女の単独犯なんてそうそうないぞ。」",
 		   NULL, " Non è cosa che una donna riuscirebbe a fare da sola.\"", GetGlobalFlag(GLinemodeSp));
